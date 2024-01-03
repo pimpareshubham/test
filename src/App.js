@@ -18,21 +18,21 @@ function App() {
     const fetchData = async () => {
       try {
         // Fetching data for instructor
-        const instructorResponse = await axios.get('https://test-psp5.vercel.app:3031/instructor');
+        const instructorResponse = await axios.get('http://localhost:3031/instructor');
         setInstructorData(instructorResponse.data);
 
 
         // Fetching data for course
-        const courseResponse = await axios.get('https://test-psp5.vercel.app:3031/course');
+        const courseResponse = await axios.get('http://localhost:3031/course');
         setCourseData(courseResponse.data);
 
 
         // Fetching data for about_instructor
-        const aboutInstructorResponse = await axios.get('https://test-psp5.vercel.app:3031/about_instructor');
+        const aboutInstructorResponse = await axios.get('http://localhost:3031/about_instructor');
         setAboutInstructorData(aboutInstructorResponse.data);
 
         // Fetching data for testimonial
-        const testimonialResponse = await axios.get('https://test-psp5.vercel.app:3031/testimonial');
+        const testimonialResponse = await axios.get('http://localhost:3031/testimonial');
         setTestimonialData(testimonialResponse.data)
 
 
