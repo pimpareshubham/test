@@ -14,9 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start:server": "json-server --watch data.json --port 3031",
+  "start:server": "json-server --watch data.json --port 3031 &",
   "start:react": "react-scripts start",
-  "start:both": "concurrently \"npm run start:server\" \"npm run start:react\""
+  "start:both": "npm run start:server && npm run start:react"
   },
   "eslintConfig": {
     "extends": [
